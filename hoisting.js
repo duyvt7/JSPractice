@@ -1,6 +1,6 @@
 function mouse (weight) {
-    this.weight = weight,
-    this.stomatch = [], 
+    this.weight = weight;
+    this.stomatch = [];
 }
 var jerry = new mouse(5)
 const x = jerry.weight
