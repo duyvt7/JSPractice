@@ -6,12 +6,11 @@ class rectangle {
     getArea(){
         return this.width*this.height
     }
-    static getParemeter(){
-        return this.width+this.height
+    static getParemeter(a,b){
+        return (a+b)
     }
 }
 var x = new rectangle(10,5)
 console.log(x.getArea())
-console.log(
-    rectangle.getParemeter()
-)
+console.log(rectangle.getParemeter(10,10))
+
