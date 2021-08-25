@@ -23,32 +23,32 @@
 
 // prototype method
 
-class rectangle {
-    constructor(width, length){
-        this.width = width;
-        this.length = length;
-    }
-    calArea (){
-        return this.width* this.length;
-    }
-}
-const square = new rectangle(10,10)
-console.log(square.calArea())
+// class rectangle {
+//     constructor(width, length){
+//         this.width = width;
+//         this.length = length;
+//     }
+//     calArea (){
+//         return this.width* this.length;
+//     }
+// }
+// const square = new rectangle(10,10)
+// console.log(square.calArea())
 
-//generator method
+// //generator method
 
-class polygon {
-    constructor(...sides){
-        this.sides = sides;
-    }
-    *getSide (){
-        for (const side of this.sides){
-            yield side
-        }
-    }
-}
-const pentagon = new polygon(1,2,3,4,5)
-console.log([...pentagon.getSide()])
+// class polygon {
+//     constructor(...sides){
+//         this.sides = sides;
+//     }
+//     *getSide (){
+//         for (const side of this.sides){
+//             yield side
+//         }
+//     }
+// }
+// const pentagon = new polygon(1,2,3,4,5)
+// console.log([...pentagon.getSide()])
 
 // class Polygon {
 //     constructor(...sides) {
