@@ -48,6 +48,7 @@ class dog extends animal2{
     }
     bark(){
         console.log(`${this.type} is barking`)
+        console.log(super.speak())
     }
 }
 
