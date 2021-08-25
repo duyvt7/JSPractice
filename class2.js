@@ -20,6 +20,7 @@ class animal{
     constructor(type){
         this.type = type
     }
+    static type = 'a Dog'
     static eat(){
         return console.log(`${this.type} is eatting`)
     }
@@ -31,4 +32,25 @@ animal.eat('dog')
 let z = new animal('dog')
 console.log(z.eat2())
 
+// sub class
 
+class animal2 {
+    constructor(type){
+        this.type = type
+    }
+    speak(){
+        return console.log(`${this.type} is making noise`)
+    }
+}
+class dog extends animal2{
+    constructor(){
+        super()
+    }
+    bark(){
+        return console.log(`${this.type} is barking`)
+    }
+}
+
+var D = new dog('spike')
+D.speak()
+D.bark()
