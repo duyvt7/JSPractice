@@ -39,15 +39,15 @@ class animal2 {
         this.type = type
     }
     speak(){
-        return console.log(`${this.type} is making noise`)
+        console.log(`${this.type} is making noise`)
     }
 }
 class dog extends animal2{
-    constructor(){
-        super()
+    constructor(type){
+        super(type)
     }
     bark(){
-        return console.log(`${this.type} is barking`)
+        console.log(`${this.type} is barking`)
     }
 }
 
